@@ -1,0 +1,356 @@
+.image-container {
+    display: flex;
+    overflow-x: auto;
+}
+.image-container img {
+    width: 100%;
+    flex-shrink: 0;
+}  
+@font-face { 
+    font-family:Gess;
+    src:url(https://www.alnassr.sa/fonts/GE-SS-Two-Bold.f07d3a3d.otf) format("truetype");
+    font-weight:700;
+    font-style:normal;
+  } 
+  @font-face { 
+    font-family:Gess;
+    src:url(https://www.alnassr.sa/fonts/gessLight.570cf835.otf) format("truetype");
+    font-weight:400;
+    font-style:normal;
+  } 
+  @font-face { 
+    font-family:Helvetica;
+    src:url(https://www.alnassr.sa/fonts/HelveticaNeueLTProLt.5ef4e382.otf) format("truetype");
+    font-weight:400;
+    font-style:normal;
+  } 
+  @font-face { 
+    font-family:Helvetica;
+    src:url(https://www.alnassr.sa/fonts/HelveticaNeueLTProBd.75a9c07f.otf) format("truetype");
+    font-weight:700;
+    font-style:normal;
+  } 
+  @font-face { 
+    font-family:Helvetica;
+    src:url(https://www.alnassr.sa/fonts/HelveticaNeueLTProBdEx.73162bd7.otf) format("truetype");
+    font-weight:900;
+    font-style:normal;
+  } 
+  @import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap'); 
+    body {  
+      list-style:none;
+      font-family:Inter,Gess,GE SS,Arial,Helvetica,sans-serif;
+      font-size:var(--bs-body-font-size);
+      font-weight:var(--bs-body-font-weight);
+      line-height:var(--bs-body-line-height);
+      color:var(--bs-body-color);
+      text-align:var(--bs-body-text-align);
+      direction:ltr;
+    }  
+  * { 
+      box-sizing: border-box;
+  } 
+  
+  * { 
+      padding: 0; 
+      margin: 0; 
+      box-sizing: border-box;
+  } 
+  
+  body { 
+      margin: 0; 
+      font-family: var(--bs-body-font-family); 
+      font-size: var(--bs-body-font-size); 
+      font-weight: var(--bs-body-font-weight); 
+      line-height: var(--bs-body-line-height); 
+      color: var(--bs-body-color); 
+      text-align: var(--bs-body-text-align); 
+      background-color: var(--bs-body-bg); 
+      -webkit-text-size-adjust: 100%; 
+      -webkit-tap-highlight-color: transparent;
+  } 
+  
+  body { 
+      overflow-x: hidden; 
+     
+     // padding-top: 107.11px; 
+      background-color: #f8f6ff!important;
+  } 
+  
+  :root { 
+      --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+      --bs-body-font-family: var(--bs-font-sans-serif); 
+      --bs-body-font-size: 1rem; 
+      --bs-body-font-weight: 400; 
+      --bs-body-line-height: 1.5; 
+      --bs-body-color: #212529; 
+      --bs-body-bg: #fff;
+  } 
+  
+  @media (prefers-reduced-motion: no-preference){ 
+    :root { 
+      scroll-behavior: smooth;
+    } 
+  }     
+  
+  :root { 
+      scroll-behavior: smooth; 
+  } 
+  
+  .card-5zs { 
+    overflow-x: hidden; 
+
+      box-shadow: 0 9px 20px rgba(0,0,0,.0509803922)!important; 
+      border: .5pt solid #e9e9e9; 
+      background-color: #fff; 
+      border-radius: 8pt; 
+   overflow: hidden; 
+      -webkit-border-radius: 8pt; 
+      -moz-border-radius: 8pt; 
+      -ms-border-radius: 8pt; 
+      -o-border-radius: 8pt; 
+      width: 50%; 
+      margin: 0 auto; 
+      max-width: 992px; 
+      height: auto; 
+      padding: 20px 0; 
+      display: flex; 
+      align-items: flex-end; 
+      position: relative; 
+      justify-content: center; 
+      transition: .3s linear; 
+      /* -webkit-transition: .3s linear; 
+      -moz-transition: .3s linear; 
+      -ms-transition: .3s linear; 
+      -o-transition: .3s linear;  */
+      transform: scale(.8); 
+      /* -webkit-transform: scale(.8); 
+      -moz-transform: scale(.8); 
+      -ms-transform: scale(.8); 
+      -o-transform: scale(.8); */
+      display: flex; 
+      align-items: flex-end; 
+      justify-content: center; 
+      width: 100%; 
+      background-color: #fff; 
+      box-shadow: 0 5px 10px rgba(0,0,0,.193); 
+      border-radius: 10px; 
+      -webkit-border-radius: 10px; 
+      -moz-border-radius: 10px; 
+      -ms-border-radius: 10px; 
+      -o-border-radius: 10px; 
+      max-width: 992px; 
+      margin: 0 auto;
+  } 
+/*   
+  .box-6ts { 
+
+  } 
+   */
+  *,:after,:before { 
+      box-sizing: border-box;
+  } 
+  
+  img { 
+      vertical-align: middle;
+     // overflow-y: hidden; 
+     overflow-x: hidden; 
+     
+
+  } 
+  
+  .image-lz9  { 
+      position: absolute; 
+      top: -40px; 
+      left: -40px; 
+      filter: grayscale(100%); 
+      -webkit-filter: grayscale(100%); 
+      width: 320px; 
+      -o-object-fit: contain; 
+      object-fit: contain; 
+      z-index: 0; 
+      opacity: .3;
+  } 
+  
+  @media (min-width: 768px){ 
+    .pb-md-arp { 
+      padding-bottom: 3rem!important;
+    } 
+  
+  }     
+  
+  .logo-lfw  { 
+      text-align: center; 
+      margin: 0 80px; 
+      padding-top: 45px; 
+      position: relative;
+  } 
+  
+  .match-rxf  { 
+      position: relative; 
+      text-align: center; 
+      height: 100%; 
+      padding-top: 50px; 
+      min-width: 35%;
+  } 
+  
+  .logo-lfw img  { 
+      -o-object-fit: contain; 
+      object-fit: contain; 
+      width: 120px; 
+      height: 150px;
+  } 
+  
+  h2 { 
+      margin-top: 0; 
+      margin-bottom: .5rem; 
+      font-weight: 500; 
+      line-height: 1.2;
+  } 
+  
+  h2 { 
+      font-size: calc(1.325rem + .9vw);
+  } 
+  
+  @media (min-width: 1200px){ 
+    h2 { 
+      font-size: 2rem;
+    } 
+  }     
+  */
+  
+  .logo-lfw .team-3br  { 
+      font-size: 18px; 
+      margin-top: 22px; 
+      color: #102684; 
+      text-transform: uppercase;
+  } 
+  
+  .match-rxf .ggmxf  { 
+      margin-bottom: 20px;
+  } 
+  
+  .match-rxf .match-aw2  { 
+      font-size: 18px; 
+      color: #757575; 
+      margin: 0;
+  } 
+  
+  .match-rxf .Lig-roy  { 
+      margin-top: 16px; 
+      color: #757575; 
+      font-size: 16px; 
+      font-weight: 700;
+  } 
+  
+  .mt-six { 
+      margin-top: .5rem!important;
+  } 
+  
+  .match-rxf .tim-zpw  { 
+      display: flex; 
+      justify-content: space-evenly; 
+      align-items: center; 
+      color: #102684; 
+      font-size: 33px; 
+      margin-top: 25px;
+  } 
+  
+  button { 
+      border-radius: 0;
+  } 
+  
+  button { 
+      margin: 0; 
+      font-family: inherit; 
+      font-size: inherit; 
+      line-height: inherit;
+  } 
+  
+  button { 
+      text-transform: none;
+  } 
+  
+  button { 
+      -webkit-appearance: button;
+  } 
+  
+  .btn-i4v { 
+      display: inline-block; 
+      font-weight: 400; 
+      line-height: 1.5; 
+      color: #212529; 
+      text-align: center; 
+      text-decoration: none; 
+      vertical-align: middle; 
+      cursor: pointer; 
+      -webkit-user-select: none; 
+      -moz-user-select: none; 
+      -ms-user-select: none; 
+      user-select: none; 
+      background-color: transparent; 
+      border: 1px solid transparent; 
+      padding: .375rem .75rem; 
+      font-size: 1rem; 
+      border-radius: .25rem; 
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  } 
+  
+  .btn-i4v { 
+      box-shadow: none!important; 
+      text-transform: uppercase; 
+      border-radius: 10px!important; 
+      -webkit-border-radius: 10px!important; 
+      -moz-border-radius: 10px!important; 
+      -ms-border-radius: 10px!important; 
+      -o-border-radius: 10px!important; 
+      opacity: 1;
+  } 
+  
+  .btn-klv { 
+      background-color: #fec709!important; 
+      color: #102684!important; 
+      transition: .2s linear!important; 
+      -webkit-transition: .2s linear!important; 
+      -moz-transition: .2s linear!important; 
+      -ms-transition: .2s linear!important; 
+      -o-transition: .2s linear!important;
+  } 
+  
+  button:not(:disabled) { 
+      cursor: pointer;
+  } 
+  
+  .match-rxf button  { 
+      width: 100%; 
+      margin-top: 10px; 
+      font-size: 18px; 
+      font-weight: 700;
+  } 
+  
+  .btn-i4v:hover { 
+      color: #212529;
+  } 
+  
+  .btn-i4v:hover { 
+      box-shadow: 0 8px 25px -8px rgba(0,0,0,.5)!important;
+  } 
+  
+  .btn-klv:hover { 
+      box-shadow: 0 8px 25px -8px rgba(254,199,9,.5)!important;
+  } 
+  
+  .match-rxf .ggmxf img  { 
+      height: 50px;
+  } 
+  
+  .match-rxf .tim-zpw div  { 
+      margin: 0 4px;
+  } 
+  
+  .match-rxf .tim-zpw span  { 
+      font-weight: 700; 
+      color: #757575; 
+      font-size: 17px;
+  } 
+  
