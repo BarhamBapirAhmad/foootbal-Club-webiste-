@@ -1,0 +1,111 @@
+.Managers {
+     margin-bottom: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.Managers h1 {
+    padding: 12px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.player-cards {
+    /* Adjust container width */
+    min-width: 80%;
+    margin: 0 auto; /* Center the cards */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three columns by default */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 30px; /* Adjust gap between cards */
+}
+
+/* Style for player card */
+.player-card {
+    transition:   1.5s; /* Add smooth transition */
+
+    height: 384px; width: 288px;
+    background-image: url(https://publish-p47754-e237306.adobeaemcloud.com/content/dam/common/statics/public-content/internet/web/rm-spa-web/images/player-profile/bg.app.svg?$Mobile$);
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visual effect */
+    border-radius: 12px; /* Add border radius for rounded corners */
+    overflow: hidden;
+    position: relative; /* Hide overflow content */
+}
+
+/* Style for player image */
+.IMG-card{
+     width: 288px !important;
+    background-image: url(https://publish-p47754-e237306.adobeaemcloud.com/content/dam/common/statics/public-content/internet/web/rm-spa-web/images/player-profile/bg.app.svg?$Mobile$);
+    width: 100% !important;
+   margin: 0 auto;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
+    display: block;
+    transition:  all  1s ease-out; /* Add smooth transition */
+    box-shadow: 100px 100px 80px 200px rgba(0, 0, 0, 0.3); /* Add shadow effect from bottom to top */
+    z-index: 1; /* Ensure image is behind text */
+}
+
+.IMG-card:hover{
+    transform: scale(1.1); /* Scale image on hover */
+}
+.player-card:hover {
+    margin-top: -12px;
+
+       transition:  all 1s ease-out; /* Add smooth transition */
+
+}
+
+/* Style for player information */
+.player-info {
+    background-color: rgba(255, 255, 255, 0.503); /* Semi-transparent white background for better readability */
+     text-align: center; /* Center text within player information */
+    position: absolute;
+    bottom: 0; /* Align player info at the bottom of the card */
+    left: 0; /* Align player info to the left */
+    right: 0; /* Align player info to the right */
+    border-radius: 0 0 8px 8px; /* Rounded corners for bottom edges */
+    z-index: 2; /* Ensure text is above the image */
+}
+
+ .player-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;  
+}
+
+ .player-year {
+    font-size: 14px;
+    color: #888;
+}
+
+ .playerNumber {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: -30%;
+    left: 8%;
+    color: rgb(0, 0, 0);
+
+    padding: 5px 10px;
+    border-radius: 0 0 0 8px;
+    font-weight: bold;
+    font-size: 54px;
+   ;
+}
+
+ @media (max-width: 767px) {
+    .player-cards {
+        width: 240px;
+        grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+    }
+}@media (max-width: 567px) {
+    .player-cards {
+        grid-template-columns: repeat(1, 1fr); /* Two columns on mobile */
+    }
+}

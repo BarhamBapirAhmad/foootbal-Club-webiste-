@@ -308,7 +308,7 @@ cursor: pointer;
     .info-side {
         display: none;
     }
-/* }.modal {
+modal {
     display: none; /* Hide by default */
     position: fixed; /* Positioning context */
     z-index: 1000; /* Ensure modal appears on top */
@@ -339,4 +339,4 @@ cursor: pointer;
     color: black;
     text-decoration: none;
     cursor: pointer;
-} 
+} }

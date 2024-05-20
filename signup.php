@@ -62,7 +62,7 @@
         // Registration logic
         $username = mysqli_escape_string($conn, $_POST['username']);
         $email = mysqli_escape_string($conn,$_POST['signup-email']);
-        $password = mysqli_escape_string($conn, $_POST['signup-password']);
+        $password = mysqli_escape_string($conn, hash('sha256', $_POST['signup-password']));
 
         $select_users = mysqli_query($conn, "SELECT * FROM users WHERE Email = '$email'");
 
