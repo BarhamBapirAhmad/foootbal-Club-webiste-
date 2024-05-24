@@ -121,7 +121,7 @@ include('navbar.php');
             $goals = $_POST['goals'];
             $draws = $_POST['draws'];
             $points = $wins * 3 + $draws; // Recalculate points
-            
+            // mn
             $update_query = "UPDATE club SET `win` = $wins, `losee` = $loses, `goalScored` = $goals, `point` = $points, `draw` = $draws WHERE id = $team_id";
             $update_result = mysqli_query($conn, $update_query);
             if ($update_result) {
